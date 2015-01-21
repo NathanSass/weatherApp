@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         let sharedSession = NSURLSession.sharedSession();
         
         let downloadTask: NSURLSessionDownloadTask = sharedSession.downloadTaskWithURL(forecastURL!, completionHandler: { (location: NSURL!, response: NSURLResponse!, error: NSError!) -> Void in
-            println(response)
+            var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
+            println(urlContents)
         })
         
         downloadTask.resume()
