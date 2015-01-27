@@ -26,7 +26,10 @@ class ViewController: UIViewController {
             if(error == nil){
                 let dataObject = NSData(contentsOfURL: location)
                 let weatherDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(dataObject!, options: nil, error: nil) as NSDictionary
-                println(weatherDictionary)
+                
+                let currentWeather = Current(weatherDictionary: weatherDictionary);
+                println(currentWeather.temperature)
+                
             }
             
         })
