@@ -95,6 +95,14 @@
                             <constraint firstAttribute="centerY" secondItem="cx1-OB-DQK" secondAttribute="centerY" id="yeW-eC-yyJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="Vhu-X8-Gu3" id="4m9-MW-VKt"/>
+                        <outlet property="humidityLabel" destination="CU4-WF-6KV" id="7hh-bK-dRw"/>
+                        <outlet property="iconView" destination="az6-ql-Cv4" id="Dgl-wh-WG1"/>
+                        <outlet property="precipitationLabel" destination="zYR-xr-D18" id="gIU-wL-Dvu"/>
+                        <outlet property="summaryLabel" destination="245-S4-pgT" id="E9R-lS-gZP"/>
+                        <outlet property="temperatureLabel" destination="cx1-OB-DQK" id="Jas-fk-rDW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
